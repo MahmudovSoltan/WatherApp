@@ -1,0 +1,97 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #87ceeb, #f0f8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-right: 30px;
+}
+
+.box_reslat {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #87ceeb;
+  box-shadow: 0 0 8px rgba(135, 206, 235, 0.5);
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.box_reslat img {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+}
+
+p#wather_dec {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 10px 0;
+}
+
+#humidy, #wind {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+#humidy i, #wind i {
+  margin-right: 8px;
+  color: #87ceeb;
+}
+
+@media (max-width: 768px) {
+  body{
+    flex-direction: column;
+  }
+ 
+}
+@media (max-width: 480px) {
+  h1 {
+      font-size: 2rem;
+  }
+
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  input[type="text"] {
+      font-size: 0.9rem;
+  }
+}
