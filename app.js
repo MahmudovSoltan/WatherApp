@@ -13,8 +13,7 @@ const setQuery = (e) => {
 };
 
 const getResult = (inputValue) => {
-  let search = `${url}weather?q=${inputValue}&appid=${apikey}&units=metric&lang=az`;
-  fetch(search)
+  fetch( `${url}weather?q=${inputValue}&appid=${apikey}&units=metric&lang=az`)
     .then((response) => response.json())
     .then((data) => displayResult(data))
     .catch((err) => console.error("Error fetching data:", err));
